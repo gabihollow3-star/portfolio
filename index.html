@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emilo François — UI&UX · Marketing Digital</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <meta name="description"
+    content="Portfolio d'Andriamanalimahefa Emilo François, étudiant en métiers du digital à l'ENI Antananarivo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("Dbi4azMEeXRyfcJLb");</script>
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────── -->
+  <nav id="main-nav">
+    <a href="#home" class="nav-mark">EF.</a>
+    <ul class="nav-links">
+      <li><a href="#home" onclick="smoothScroll(event,'#home')">Accueil</a></li>
+      <li><a href="#about" onclick="smoothScroll(event,'#about')">À propos</a></li>
+      <li><a href="#skills" onclick="smoothScroll(event,'#skills')">Compétences</a></li>
+      <li><a href="#projects" onclick="smoothScroll(event,'#projects')">Projets</a></li>
+      <li><a href="#contact" onclick="smoothScroll(event,'#contact')">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" onclick="smoothScroll(event,'#home')">Accueil</a>
+    <a href="#about" onclick="smoothScroll(event,'#about')">À propos</a>
+    <a href="#skills" onclick="smoothScroll(event,'#skills')">Compétences</a>
+    <a href="#projects" onclick="smoothScroll(event,'#projects')">Projets</a>
+    <a href="#formation" onclick="smoothScroll(event,'#formation')">Formation</a>
+    <a href="#contact" onclick="smoothScroll(event,'#contact')">Contact</a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────── -->
+  <section id="home">
+    <div id="vanta-canvas"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <span class="hero-avatar-initials"><img src="images/emilo.jpeg" alt="Emilo François"></span>
+      </div>
+      <p class="hero-eyebrow">UI&UX &nbsp;&middot;&nbsp; Marketing Digital &nbsp;&middot;&nbsp; ENI Antananarivo</p>
+      <h1 class="hero-name">Emilo Fran&ccedil;ois</h1>
+      <p class="hero-sub">
+        Développeur web · Designer UI/UX · Créateur d'expériences numériques.
+        Étudiant passionné en métiers du digital à l'ENI Madagascar.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-solid" onclick="smoothScroll(event,'#projects')">Voir mes projets</a>
+        <a href="#contact" class="btn-ghost" onclick="smoothScroll(event,'#contact')">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="scroll-line-wrap">
+      <div class="scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ── 01 À PROPOS ───────────────────────── -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">À propos de moi</h2>
+      </div>
+      <div class="about-layout">
+        <div>
+          <p class="about-lead reveal">Étudiant motivé, en quête de projets concrets au croisement du digital, du design
+            et de la stratégie.</p>
+          <p class="about-body reveal">Passionné par le marketing digital, la communication et les réseaux sociaux, je
+            construis progressivement une expertise à l'interface entre la technique et la création. Mon approche
+            combine sensibilité créative et rigueur technique pour livrer des projets qui créent un impact réel.</p>
+          <table class="info-table reveal">
+            <tbody>
+              <tr>
+                <td>Formation</td>
+                <td>ENI Antananarivo — Métiers du digital (en cours)</td>
+              </tr>
+              <tr>
+                <td>Localisation</td>
+                <td>Fianarantsoa 301, Madagascar</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>andriamanalinaemilo@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Téléphone</td>
+                <td>+261 33 99 349 97</td>
+              </tr>
+              <tr>
+                <td>Langues</td>
+                <td>Français · Malgache · Anglais</td>
+              </tr>
+              <tr>
+                <td>Intérêts</td>
+                <td>Football · Course · Fitness · Dessin technique</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="stat-cards">
+          <div class="stat-card reveal">
+            <p class="stat-card-title">Formation supérieure</p>
+            <p class="stat-card-body">École Nationale de l'Informatique (ENI) · Métiers du digital</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-card-title">Certifications Udemy</p>
+            <p class="stat-card-body">Python · NumPy, Pandas &amp; Data Analysis</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-card-title">Expertise principale</p>
+            <p class="stat-card-body">UI&amp;UX · Marketing digital · Développement web</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-card-title">Réseaux maîtrisés</p>
+            <p class="stat-card-body">Facebook · Instagram · LinkedIn · X (Twitter)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 02 COMPÉTENCES ─────────────────────── -->
+  <div class="section-alt">
+    <div class="section-wrap" id="skills">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Compétences</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Marketing digital</p>
+          <ul class="skill-list">
+            <li>Bases du marketing digital</li>
+            <li>Réseaux sociaux</li>
+            <li>Création de contenu</li>
+            <li>Notions de SEO</li>
+            <li>Analyse — likes, vues, engagement</li>
+          </ul>
+        </div>
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Développement & design</p>
+          <ul class="skill-list">
+            <li>HTML / CSS</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Web design</li>
+            <li>UI &amp; UX</li>
+          </ul>
+        </div>
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Plateformes sociales</p>
+          <ul class="skill-list">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>WhatsApp</li>
+            <li>LinkedIn</li>
+            <li>X (Twitter)</li>
+          </ul>
+        </div>
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Données & analyse</p>
+          <ul class="skill-list">
+            <li>NumPy &amp; Pandas</li>
+            <li>Python for Data Analysis</li>
+            <li>Analyse de données</li>
+            <li>Dessin technique</li>
+          </ul>
+        </div>
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Comportementales</p>
+          <ul class="skill-list">
+            <li>Esprit d'équipe</li>
+            <li>Communication interpersonnelle</li>
+            <li>Gestion du temps</li>
+            <li>Sens du relationnel</li>
+          </ul>
+        </div>
+        <div class="skill-cell reveal">
+          <p class="skill-cell-label">Expertise déclarée</p>
+          <ul class="skill-list">
+            <li>UI &amp; UX</li>
+            <li>Programmation Python</li>
+            <li>Développement web</li>
+            <li>SQL</li>
+            <li>Marketing digital</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 03 PROJETS ─────────────────────────── -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Mes projets</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-01">
+            <span class="project-thumb-num">01</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Campagne réseaux sociaux</p>
+            <p class="project-desc">Stratégie de contenu et gestion de campagnes sur Facebook &amp; Instagram pour une
+              marque locale malgache.</p>
+            <div class="project-tags">
+              <span class="project-tag">Facebook Ads</span>
+              <span class="project-tag">Instagram</span>
+              <span class="project-tag">Contenu</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-02">
+            <span class="project-thumb-num">02</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Dashboard d'analyse</p>
+            <p class="project-desc">Visualisation de données d'engagement avec NumPy et Pandas — suivi de métriques
+              marketing.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">NumPy</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-03">
+            <span class="project-thumb-num">03</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Site vitrine UI/UX</p>
+            <p class="project-desc">Conception et développement d'une interface web moderne avec HTML/CSS et principes
+              UX.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML / CSS</span>
+              <span class="project-tag">UI &amp; UX</span>
+              <span class="project-tag">Web design</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-04">
+            <span class="project-thumb-num">04</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Optimisation SEO</p>
+            <p class="project-desc">Audit et optimisation SEO d'un site web — amélioration du référencement naturel et
+              de la visibilité en ligne.</p>
+            <div class="project-tags">
+              <span class="project-tag">SEO</span>
+              <span class="project-tag">Audit</span>
+              <span class="project-tag">Contenu</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-05">
+            <span class="project-thumb-num">05</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Script d'automatisation</p>
+            <p class="project-desc">Développement d'un script Python pour automatiser la collecte et l'analyse de
+              données marketing.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">Automatisation</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-06">
+            <span class="project-thumb-num">06</span>
+          </div>
+          <div class="project-body">
+            <p class="project-title">Design system personnel</p>
+            <p class="project-desc">Création d'une bibliothèque de composants UI réutilisables et d'une charte graphique
+              cohérente.</p>
+            <div class="project-tags">
+              <span class="project-tag">UI &amp; UX</span>
+              <span class="project-tag">Design</span>
+              <span class="project-tag">HTML / CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 04 FORMATION ───────────────────────── -->
+  <div class="section-alt">
+    <div class="section-wrap" id="formation">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Formation</h2>
+      </div>
+
+      <div class="tl-item reveal">
+        <p class="tl-period">En cours</p>
+        <div>
+          <p class="tl-title">Métiers du digital — Formation supérieure</p>
+          <p class="tl-org">École Nationale de l'Informatique (ENI) &middot; Antananarivo, Madagascar</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <p class="tl-period">2023 – 2024</p>
+        <div>
+          <p class="tl-title">Baccalauréat</p>
+          <p class="tl-org">Lycée Ampanihy &middot; Tulear, Madagascar</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <p class="tl-period">2021 – 2022</p>
+        <div>
+          <p class="tl-title">Diplôme en mécanique industrielle</p>
+          <p class="tl-org">Soltec Mandrosoa Ivato &middot; Antananarivo, Madagascar</p>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <div class="section-header certifications-header">
+          <span class="section-num">04b</span>
+          <h2 class="section-title certifications-title">Certifications</h2>
+        </div>
+        <div class="certif-row">
+          <div class="certif-cell reveal">
+            <p class="certif-provider">Udemy &nbsp;&middot;&nbsp; Thomas Collart</p>
+            <p class="certif-name">Projet Python — Pratiquez et progressez en programmant</p>
+            <a href="https://ude.my/UC-29e9c13c-3653-44a8-a137-3fab49cb236e" target="_blank" rel="noopener"
+              class="certif-link">Voir le certificat</a>
+          </div>
+          <div class="certif-cell reveal">
+            <p class="certif-provider">Udemy &nbsp;&middot;&nbsp; Sara Academy</p>
+            <p class="certif-name">NumPy, Pandas &amp; Python for Data Analysis</p>
+            <a href="https://ude.my/UC-13073cbd-6714-447e-84b9-987572819603" target="_blank" rel="noopener"
+              class="certif-link">Voir le certificat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 05 CONTACT ─────────────────────────── -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contactez-moi</h2>
+      </div>
+      <div class="contact-layout">
+        <div>
+          <p class="contact-lead reveal">Travaillons ensemble</p>
+          <p class="contact-body reveal">Vous avez un projet en tête ? N'hésitez pas à me contacter. Je serais ravi de
+            discuter de vos besoins et de voir comment je peux vous aider à concrétiser vos idées.</p>
+          <div class="contact-info-items reveal">
+            <div class="contact-row">
+              <span class="contact-row-label">Email</span>
+              <span class="contact-row-val">andriamanalinaemilo@gmail.com</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">Téléphone</span>
+              <span class="contact-row-val">+261 33 99 349 97</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">Adresse</span>
+              <span class="contact-row-val">Rte Circulaire, Fianarantsoa 301</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">LinkedIn</span>
+              <span class="contact-row-val">Emilo François ANDRIAMANALIMAHEFA</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">Instagram</span>
+              <span class="contact-row-val">Andriamanalina Emilo François</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">Facebook</span>
+              <span class="contact-row-val">Andriamanalina Emilo </span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Nom</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input form-textarea" id="message" name="message" rows="6"
+              placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Emilo François</p>
+        <p class="footer-tagline">Étudiant en métiers du digital, passionné par la création d'expériences web et de
+          stratégies numériques percutantes.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#home" onclick="smoothScroll(event,'#home')">Accueil</a></li>
+          <li><a href="#about" onclick="smoothScroll(event,'#about')">À propos</a></li>
+          <li><a href="#projects" onclick="smoothScroll(event,'#projects')">Projets</a></li>
+          <li><a href="#formation" onclick="smoothScroll(event,'#formation')">Formation</a></li>
+          <li><a href="#contact" onclick="smoothScroll(event,'#contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Réseaux sociaux</p>
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/emilo-françois-andriamanalimahefa-3b9145273" class="footer-social-btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/andriamanalinaemilo?igsh=MXNnZXZ4aXF6ZGp5Zg==" class="footer-social-btn" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61567367322528" class="footer-social-btn" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://x.com/services39500" class="footer-social-btn" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Andriamanalimahefa Emilo Fran&ccedil;ois. Tous droits réservés.</p>
+      <p class="footer-copy">emilo.services@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ────────────────────────────── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+  <script>
+    /* ── VANTA ── */
+    if (window.VANTA && window.THREE) {
+      VANTA.RINGS({
+        el: '#vanta-canvas',
+        THREE: window.THREE,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200,
+        minWidth: 200,
+        backgroundColor: 0x080812,
+        baseColor: 0x18183a,
+        size: 1.3,
+        amplitudeFactor: 1.6
+      });
+    }
+
+    /* ── NAV SCROLL STATE ── */
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── SMOOTH SCROLL ── */
+    function smoothScroll(e, target) {
+      e.preventDefault();
+      const el = document.querySelector(target);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('mobile-menu').classList.remove('open');
+        document.getElementById('hamburger').classList.remove('open');
+      }
+    }
+
+    /* ── HAMBURGER ── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    /* ── SCROLL REVEAL ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 55);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.07 });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    /* ── FORM ── */
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('.form-submit');
+      btn.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+
+      emailjs.sendForm(
+        'service_5othvqe',
+        'template_njmx0ga',
+        this,
+        'Dbi4azMEeXRyfcJLb'
+      )
+        .then(() => {
+          btn.textContent = 'Message envoyé !';
+          btn.style.background = '#0f6e56';
+          this.reset();
+          setTimeout(() => {
+            btn.textContent = 'Envoyer le message';
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        })
+        .catch((error) => {
+          console.error(error);
+          btn.textContent = 'Erreur — réessayer';
+          btn.style.background = '#a32d2d';
+          btn.disabled = false;
+        });
+    });
+  </script>
+</body>
+
+</html>
